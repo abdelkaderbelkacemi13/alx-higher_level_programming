@@ -69,7 +69,7 @@ class Rectangle:
         if (self.__height == 0 or self.__width == 0):
             return ("")
         printed_rectangle = ""
-        for col in range(self.__height - 1):
+        for col in range(self.__height):
             for row in range(self.__width):
                 printed_rectangle += "#"
             if (col < (self.__height - 1)):
