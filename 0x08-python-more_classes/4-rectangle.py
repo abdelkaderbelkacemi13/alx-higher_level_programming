@@ -23,7 +23,7 @@ class Rectangle:
         """
         set the width of the rectangle
         """
-        return self.__width
+        return (self.__width)
 
     @width.setter
     def width(self, value):
@@ -38,7 +38,7 @@ class Rectangle:
         """
         set the height of the rectangle
         """
-        return self.__height
+        return (self.__height)
 
     @height.setter
     def height(self, value):
@@ -72,11 +72,12 @@ class Rectangle:
         for col in range(self.__height):
             for row in range(self.__width):
                 printed_rectangle += "#"
-            printed_rectangle += "\n"
+            if (col < (self.__height - 1)):
+                printed_rectangle += "\n"
         return (printed_rectangle)
 
     def __repr__(self):
         """
         return a string representation of the rectangle
         """
-        return("Rectangle({:d}, {:d})".format(self.__width, self.__height))
+        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
