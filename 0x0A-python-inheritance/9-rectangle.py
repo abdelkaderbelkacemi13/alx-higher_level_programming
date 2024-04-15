@@ -8,9 +8,9 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         """Instantiation with width and height"""
         self.integer_validator("width", width)
-        self.width = width
+        self.__width = width
         self.integer_validator("height", height)
-        self.height = height
+        self.__height = height
 
     def area(self):
         """claculate the area"""
@@ -18,4 +18,4 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """Representing the Rectangle"""
-        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+        return ("[Rectangle] " + str(self.__width) + "/" + str(self.__height))
