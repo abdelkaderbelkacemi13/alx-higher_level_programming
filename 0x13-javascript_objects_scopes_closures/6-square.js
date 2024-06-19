@@ -2,7 +2,7 @@
 const ParSquare = require('./5-square');
 
 class Square extends ParSquare {
-  charPrint(c) {
+  charPrint (c) {
     if (c === undefined) {
       c = 'X';
     }
