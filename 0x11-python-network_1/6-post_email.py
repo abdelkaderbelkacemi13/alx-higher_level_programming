@@ -10,6 +10,6 @@ if __name__ == "__main__":
     email_value = {'email': sys.argv[2]}
 
     # req = request
-    req = requests.get(given_url, data=email_value)
+    req = requests.post(given_url, data=email_value)
     # Print the text content of the server's response
     print(req.text)
